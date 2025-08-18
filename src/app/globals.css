@@ -1,26 +1,147 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Coffee/Mocha Color Theme */
+  --background: #faf8f5; /* Cream white */
+  --foreground: #3e2723; /* Dark brown */
+  --card: #ffffff;
+  --card-foreground: #3e2723;
+  --popover: #ffffff;
+  --popover-foreground: #3e2723;
+  --primary: #6f4e37; /* Coffee brown */
+  --primary-foreground: #ffffff;
+  --secondary: #d7ccc8; /* Light mocha */
+  --secondary-foreground: #3e2723;
+  --muted: #efebe9; /* Soft cream */
+  --muted-foreground: #8d6e63; /* Medium brown */
+  --accent: #bcaaa4; /* Cappuccino */
+  --accent-foreground: #3e2723;
+  --destructive: #d32f2f;
+  --destructive-foreground: #ffffff;
+  --border: rgba(109, 76, 65, 0.2); /* Coffee brown with opacity */
+  --input: transparent;
+  --ring: #8d6e63;
+  --radius: 1rem; /* More rounded corners */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  --background: #2e1a16; /* Dark coffee */
+  --foreground: #faf8f5;
+  --card: #3e2723;
+  --card-foreground: #faf8f5;
+  --popover: #3e2723;
+  --popover-foreground: #faf8f5;
+  --primary: #d7ccc8;
+  --primary-foreground: #2e1a16;
+  --secondary: #4e342e;
+  --secondary-foreground: #faf8f5;
+  --muted: #4e342e;
+  --muted-foreground: #bcaaa4;
+  --accent: #5d4037;
+  --accent-foreground: #faf8f5;
+  --destructive: #ef5350;
+  --destructive-foreground: #faf8f5;
+  --border: rgba(188, 170, 164, 0.2);
+  --input: #4e342e;
+  --ring: #bcaaa4;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+
+    label {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom scrollbar styles */
+@layer utilities {
+  /* Webkit browsers (Chrome, Safari, Edge) */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--muted);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+  }
+}
+
+@layer components {
+  .gradient-text {
+    background: linear-gradient(to right, #ea580c, #f97316);
+  }
 }

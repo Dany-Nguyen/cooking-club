@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Daniel Nguyen - Personal Website
 
-## Getting Started
+A modern, responsive personal portfolio website built with Next.js, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Modern Design**: Clean, professional layout with gradient backgrounds
+- **Responsive**: Fully responsive design that works on all devices
+- **Smooth Animations**: Beautiful animations powered by Framer Motion
+- **Fast Performance**: Built with Next.js 15 and optimized for speed
+- **TypeScript**: Full type safety throughout the application
+- **SEO Optimized**: Proper meta tags and semantic HTML structure
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15.4.6 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Fonts**: Geist Sans & Geist Mono
+- **Icons**: Custom emoji icons
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── globals.css          # Global styles and Tailwind configuration
+│   ├── layout.tsx           # Root layout with Navigation
+│   └── page.tsx             # Main homepage with all sections
+└── components/
+    └── Navigation.tsx       # Fixed navigation header component
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Sections
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Hero**: Introduction with animated profile and call-to-action buttons
+- **About**: Skills showcase with Development, Learning, and Experience cards
+- **Projects**: Portfolio showcase with project cards (customizable)
+- **Contact**: Contact section with email call-to-action
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
 
-## Learn More
+1. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Open your browser**:
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Customization
 
-## Deploy on Vercel
+### Personal Information
+Edit the following in `src/app/page.tsx`:
+- Name and tagline in the hero section
+- About section descriptions
+- Project information
+- Contact email address
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Styling
+- Modify colors and design in `src/app/globals.css`
+- Update Tailwind configuration in `tailwind.config.js`
+- Customize animations in component files
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Projects
+Replace the placeholder projects in the Projects section with your actual work:
+- Add project images
+- Update project descriptions
+- Include live demo and GitHub links
+
+## 📱 Browser Support
+
+This website works on all modern browsers and is fully responsive across:
+- Desktop (1024px+)
+- Tablet (768px - 1023px)
+- Mobile (320px - 767px)
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+1. Push your code to GitHub
+2. Connect your repository to [Vercel](https://vercel.com)
+3. Deploy automatically with each push
+
+### Other Platforms
+- **Netlify**: Drag and drop the `out` folder after running `npm run build`
+- **GitHub Pages**: Use `next export` for static deployment
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+Built with ❤️ by Daniel Nguyen
