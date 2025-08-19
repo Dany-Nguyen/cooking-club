@@ -88,7 +88,7 @@ const CommunitySection = () => {
                       ))}
                     </div>
                     <p className="text-muted-foreground mb-6">
-                      "{testimonial.content}"
+                      &quot;{testimonial.content}&quot;
                     </p>
                     <div className="flex items-center space-x-3">
                       <Avatar>
