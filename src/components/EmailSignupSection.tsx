@@ -34,7 +34,7 @@ const EmailSignupSection = () => {
   };
 
   return (
-    <section id="email-signup" className="py-20 sm:py-32 bg-primary/5">
+    <section id="email-signup" className="py-20 sm:py-16 bg-primary/5">
       <div className="container">
         <div className="mx-auto max-w-2xl text-center">
           <motion.div
@@ -44,7 +44,7 @@ const EmailSignupSection = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              Ready to start cooking together?
+              Ready to start <span className="text-primary">cooking</span> together?
             </h2>
             <p className="mt-6 text-lg leading-8 text-muted-foreground">
               Join thousands of food lovers sharing recipes, tips, and culinary adventures. 
@@ -65,13 +65,13 @@ const EmailSignupSection = () => {
             </motion.div>
           ) : (
             <div className="max-w-md mx-auto">
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 sm:py-4">
                 <Input
                   type="email"
                   placeholder="Enter your email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1"
+                  className="flex-1 border border-yellow-800"
                   required
                 />
                 <Button 
@@ -96,7 +96,7 @@ const EmailSignupSection = () => {
             </div>
           )}
 
-          <p className="mt-6 text-sm text-muted-foreground">
+          <p className="mt-4 text-sm text-muted-foreground">
             By signing up, you agree to our{' '}
             <a href="#" className="text-primary hover:underline">
               Terms of Service

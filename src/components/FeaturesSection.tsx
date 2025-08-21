@@ -9,7 +9,7 @@ import {
   Calendar, 
   Home, 
   BookOpen, 
-  ShoppingCart 
+  Heart 
 } from 'lucide-react';
 
 const FeaturesSection = () => {
@@ -18,48 +18,48 @@ const FeaturesSection = () => {
       title: 'Recipe Sharing',
       description: 'Share your favorite recipes with the community and discover new dishes from around the world.',
       icon: ChefHat,
-      image: '/api/placeholder/400/300?text=Recipe+Sharing',
+      image: "https://images.unsplash.com/photo-1656711776904-993edf967bbf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWNpcGUlMjBib29rJTIwc2hhcmluZ3xlbnwxfHx8fDE3NTU1NTQzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_medium=referral",
       color: 'bg-orange-500',
     },
     {
-      title: 'Cooking Tips',
-      description: 'Learn from experienced cooks and share your own tips and tricks for better cooking.',
+      title: 'Cooking Instructions',
+      description: 'Make the best of your cooking experience with instructions powered by AI.',
       icon: Lightbulb,
-      image: '/api/placeholder/400/300?text=Cooking+Tips',
+      image: "https://plus.unsplash.com/premium_photo-1663088985731-164aaf815976?auto=format&crop=entropy&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTd8fGZyZWUlMjBpbWFnZXMlMjBjb29raW5nfGZyfDB8fHx8MTc1NTgwODEyMnww&ixlib=rb-4.1.0q=80&w=1080",
       color: 'bg-yellow-500',
     },
     {
       title: 'Community Events',
-      description: 'Join virtual cooking sessions, challenges, and local meetups with fellow food enthusiasts.',
+      description: 'Host or join local meetups with fellow food enthusiasts.',
       icon: Calendar,
-      image: '/api/placeholder/400/300?text=Community+Events',
+      image: "https://plus.unsplash.com/premium_photo-1661717466350-b5a0756a5c86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8NXx8ZnJlZSUyMGltYWdlcyUyMGNvb2tpbmd8ZnJ8MHx8fHwxNzU1ODA4MTIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       color: 'bg-green-500',
     },
     {
       title: 'Kitchen Sharing',
-      description: 'Find and share kitchen spaces for cooking together and building connections.',
+      description: "Rent your kitchen to fellow food lovers, or find the perfect kitchen space for your culinary adventures.",
       icon: Home,
-      image: '/api/placeholder/400/300?text=Kitchen+Sharing',
+      image: "https://images.unsplash.com/photo-1717323454555-f053c31ff4b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBraXRjaGVuJTIwcmVudGFsfGVufDF8fHx8MTc1NTU1NDMyMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_medium=referral",
       color: 'bg-blue-500',
     },
     {
       title: 'Recipe Collections',
       description: 'Organize your favorite recipes into collections and bookmark dishes to try later.',
       icon: BookOpen,
-      image: '/api/placeholder/400/300?text=Recipe+Collections',
+      image: "https://images.unsplash.com/photo-1676046797691-6e96294af80f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWNpcGUlMjBib29rJTIwc2hhcmluZ3xlbnwxfHx8fDE3NTU1NTQzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_medium=referral",
       color: 'bg-purple-500',
     },
     {
-      title: 'Ingredient Tracking',
-      description: 'Keep track of ingredients, get shopping lists, and never miss a key component.',
-      icon: ShoppingCart,
-      image: '/api/placeholder/400/300?text=Ingredient+Tracking',
+      title: 'All Ideas Welcome',
+      description: 'Italian-Vietnamese fusion? We\'re all-in! From traditional family recipes to wild culinary experiments, creativity has no limits here.',
+      icon: Heart,
+      image: "https://images.unsplash.com/photo-1661607699778-919620c40b1f?crop=entropy&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&q=80&w=1080",
       color: 'bg-red-500',
     },
   ];
 
   return (
-    <section className="py-20 sm:py-32">
+    <section className="py-20 sm:py-8">
       <div className="container">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">

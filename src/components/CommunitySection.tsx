@@ -11,21 +11,21 @@ const CommunitySection = () => {
     {
       name: 'Sarah Chen',
       role: 'Home Cook',
-      avatar: '/api/placeholder/40/40',
+      avatar: 'https://images.unsplash.com/photo-1676083192960-2a4873858487?w=500&h=500&fit=facearea&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       content: 'I&apos;ve discovered so many amazing recipes here! The community is incredibly supportive and always ready to help with cooking questions.',
       rating: 5,
     },
     {
       name: 'Marcus Johnson',
       role: 'Professional Chef',
-      avatar: '/api/placeholder/40/40',
+      avatar: 'https://images.unsplash.com/photo-1638912501815-f37cf59c1b20?w=500&h=500&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       content: 'As a chef, I love sharing my knowledge with passionate home cooks. This platform makes it easy to connect and inspire others.',
       rating: 5,
     },
     {
       name: 'Elena Rodriguez',
       role: 'Food Blogger',
-      avatar: '/api/placeholder/40/40',
+      avatar: 'https://images.unsplash.com/photo-1650277086521-f202e2916929?w=500&h=500&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       content: 'The recipe sharing feature is fantastic! I\'ve built a following here and connected with fellow food enthusiasts from around the world.',
       rating: 5,
     },
@@ -39,7 +39,7 @@ const CommunitySection = () => {
   ];
 
   return (
-    <section className="py-20 sm:py-32 bg-muted/30">
+    <section className="py-20 sm:py-16 bg-muted/30">
       <div className="container">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
