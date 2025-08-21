@@ -1,7 +1,7 @@
 import { Card, CardContent } from "./Card";
 import { Button } from "./Button";
-import { ImageWithFallback } from "../figma/ImageWithFallback";
 import { LucideIcon } from "lucide-react";
+import Image from "next/image";
 
 interface FeatureCardProps {
   icon: LucideIcon;
@@ -15,9 +15,11 @@ export function FeatureCard({ icon: Icon, title, description, image, color }: Fe
   return (
     <Card className="group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105">
       <div className="relative h-48 overflow-hidden">
-        <ImageWithFallback
+        <Image
           src={image}
           alt={title}
+          width={500}
+          height={500}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />

@@ -12,7 +12,7 @@ const CommunitySection = () => {
       name: 'Sarah Chen',
       role: 'Home Cook',
       avatar: 'https://images.unsplash.com/photo-1676083192960-2a4873858487?w=500&h=500&fit=facearea&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      content: 'I&apos;ve discovered so many amazing recipes here! The community is incredibly supportive and always ready to help with cooking questions.',
+      content: 'I\'ve discovered so many amazing recipes here! The community is incredibly supportive and always ready to help with cooking questions.',
       rating: 5,
     },
     {

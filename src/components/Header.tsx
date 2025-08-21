@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { Button } from './ui/Button';
 import { cn } from '@/lib/utils';
+import { ChefHat } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +22,7 @@ const Header = () => {
         {/* Logo */}
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-sm">CC</span>
+            <span className="text-primary-foreground font-bold text-sm"><ChefHat /></span>
           </div>
           <span className="hidden font-bold sm:inline-block text-foreground">
             Cooking Club
